@@ -138,7 +138,7 @@ const TikTokSettings: FC<{
           label={t('label_who_can_see_this_video', 'Who can see this video?')}
           disabled={isUploadMode}
           {...register('privacy_level', {
-            value: 'PUBLIC_TO_EVERYONE',
+            value: '',
           })}
         >
           <option value="">{t('select', 'Select')}</option>
@@ -260,7 +260,7 @@ const TikTokSettings: FC<{
             variant="hollow"
             disabled={isUploadMode}
             {...register('comment', {
-              value: true,
+              value: false,
             })}
           />
           <Checkbox
